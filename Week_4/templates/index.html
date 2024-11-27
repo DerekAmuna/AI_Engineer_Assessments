@@ -5,15 +5,21 @@
 {%endblock%}
 
 {%block body%}
-<div class="content">
-  <h1>Churn Prediction</h1>
-<form id="predictionForm" action="/predict" method="post">
-    <input type="number" name="MonthlyCharges" placeholder="Enter Monthly Charges">
-    <input type="number" name="TotalCharges" placeholder="Enter Total Charges">
-    <input type="number" name="tenure" placeholder="Enter Tenure (Years as customer)">
-    <button type="submit">Submit</button>
-</form>
-<div id="result"></div>
+<div class="container">
+    <div class="content-wrapper">
+        <div class="content">
+            <h1>Churn Prediction</h1>
+            <form id="predictionForm" action="/predict" method="post">
+                <input type="number" name="MonthlyCharges" placeholder="Enter Monthly Charges">
+                <input type="number" name="TotalCharges" placeholder="Enter Total Charges">
+                <input type="number" name="tenure" placeholder="Enter Tenure (Years as customer)">
+                <button type="submit">Submit</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+</div>
+
 <script>
     document.getElementById('predictionForm').onsubmit = function(event) {
         event.preventDefault();
@@ -28,5 +34,4 @@
         });
     };
 </script>
-</div>
 {%endblock%}
