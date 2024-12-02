@@ -1,8 +1,0 @@
-pyproject.toml
-*.csv
-.kaggle
-*.pkl
-.terraform*
-*.tfstate
-*.tfstate.*
-*.zip
