@@ -1,16 +1,17 @@
+from email.mime import application
 import pickle
 import pandas as pd
 from flask import Flask, jsonify, render_template, request
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
-@app.route("/")
+@application.route("/")
 def home():
     return render_template("index.html")
 
 
-@app.route("/predict", methods=["POST"])
+@application.route("/predict", methods=["POST"])
 def predict():
     try:
         input_data = pd.DataFrame(
@@ -57,4 +58,4 @@ def run_model(data: pd.DataFrame) -> int:
 
 
 if __name__ == "__main__":
-    app.run()
+    application.run()
