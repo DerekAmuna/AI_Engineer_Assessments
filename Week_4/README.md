@@ -1,0 +1,2 @@
+Loom video [Churn Prediction in Elastic Beanstalk](https://www.loom.com/share/28bcd9ecdecf4bb388ec7c4a9c656fe8?sid=a4eba46f-fab4-48c9-9a69-39cc6411ec95)
+Shows Churn Prediction working in Elastic Beanstalk, showcasing both examples of customer churn and not churn.
